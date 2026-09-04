@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bartosz Bojda — Unity Developer</title>
+<meta name="description" content="Unity Developer with a decade of experience building VR and mobile games. Shipped Elven Assassin, Survival Nation, Astro Hunters VR, Battlecrafter VR and more.">
+<meta name="author" content="Bartosz Bojda">
+<meta name="theme-color" content="#0b0c10">
+<link rel="canonical" href="https://barteboj.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bartosz Bojda — Unity Developer">
+<meta property="og:description" content="Unity Developer with a decade of experience building VR and mobile games. Shipped Elven Assassin, Survival Nation, Astro Hunters VR, Battlecrafter VR and more.">
+<meta property="og:image" content="https://barteboj.github.io/assets/img/portrait.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f1015'/><text x='50' y='50' font-family='monospace' font-size='46' font-weight='bold' fill='%2338bdf8' text-anchor='middle' dominant-baseline='central'>BB</text></svg>">
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- Set before first paint: reveal animations only apply when scripting is available,
+     so content is never left hidden by a state JS would have had to clear. -->
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">BB</span>
+      <span>Bartosz Bojda</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">
+      <span class="nav-toggle__bars"></span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a class="nav__link" href="#about">About</a>
+      <a class="nav__link" href="#experience">Experience</a>
+      <a class="nav__link" href="#projects">Projects</a>
+      <a class="nav__link" href="#skills">Skills</a>
+      <a class="nav__link" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero__grid">
+        <div>
+          <p class="hero__eyebrow">
+            <span class="hero__dot" aria-hidden="true"></span>
+            Open to new opportunities
+          </p>
+
+          <h1 class="hero__name">Bartosz Bojda</h1>
+          <p class="hero__role">Unity Developer</p>
+
+          <p class="hero__tagline">
+            Hi, I'm an experienced developer with a lot of passion for my work —
+            a decade of shipping VR and mobile titles, from core gameplay and AI
+            to netcode, tooling and cross-platform ports.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="mailto:barteboj@gmail.com">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/>
+              </svg>
+              Get in touch
+            </a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/bartosz-bojda-057007143" target="_blank" rel="noopener noreferrer">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21H9z"/>
+              </svg>
+              LinkedIn
+            </a>
+            <a class="btn btn--ghost" href="#projects">View projects</a>
+          </div>
+        </div>
+
+        <figure class="hero__portrait">
+          <img src="assets/img/portrait.jpg" width="798" height="799"
+               alt="Portrait photo of Bartosz Bojda" fetchpriority="high">
+        </figure>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <p class="stat__value">10 years</p>
+          <p class="stat__label">Unity development</p>
+        </div>
+        <div class="stat">
+          <p class="stat__value">9 titles</p>
+          <p class="stat__label">Shipped &amp; contributed</p>
+        </div>
+        <div class="stat">
+          <p class="stat__value">VR &amp; Mobile</p>
+          <p class="stat__label">Primary platforms</p>
+        </div>
+        <div class="stat">
+          <p class="stat__value">5 years</p>
+          <p class="stat__label">Remote experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ ABOUT ============================ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">About</p>
+        <h2 class="section-title">A decade of shipping games</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="prose">
+          <p>
+            I'm an experienced Unity Developer with <strong>a decade of proven success</strong>
+            solving complex problems, delivering high-quality results and collaborating across
+            teams. Many productions have been released with my significant contribution.
+          </p>
+          <p>
+            My work spans the full stack of game development: core gameplay mechanics, advanced
+            AI systems, responsive UI, and robust networking. I've engineered multiplayer and
+            netcode with Photon, built an automated self-hosting tournament system on AWS,
+            optimised game logic and graphics for stable framerates, and ported titles across
+            Valve, Meta, Pico and WMR headsets as well as desktop and mobile.
+          </p>
+          <p>
+            Beyond features, I care about the codebase itself — refactoring legacy systems for
+            maintainability, establishing internal programming standards, and taking part in
+            intensive code reviews to spread knowledge across the team.
+          </p>
+          <p>
+            I worked <strong>4 years in an office and 5 years remotely</strong>, and I do well in
+            both. Game development has been my dream profession for many years, and I still
+            approach the work with passion — I want to give my all to create the best productions.
+          </p>
+        </div>
+
+        <div class="facts">
+          <div class="fact">
+            <span class="fact__key">Role</span>
+            <span class="fact__value">Unity Developer</span>
+          </div>
+          <div class="fact">
+            <span class="fact__key">Experience</span>
+            <span class="fact__value">10 years</span>
+          </div>
+          <div class="fact">
+            <span class="fact__key">Focus</span>
+            <span class="fact__value">VR, multiplayer, gameplay systems</span>
+          </div>
+          <div class="fact">
+            <span class="fact__key">Engine</span>
+            <span class="fact__value">Unity &middot; C#</span>
+          </div>
+          <div class="fact">
+            <span class="fact__key">Work mode</span>
+            <span class="fact__value">Remote or on-site</span>
+          </div>
+          <div class="fact">
+            <span class="fact__key">Languages</span>
+            <span class="fact__value">Polish (native) &middot; English C1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= EXPERIENCE ========================= -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Experience</p>
+        <h2 class="section-title">Where I've worked</h2>
+      </div>
+
+      <div class="timeline">
+
+        <article class="job reveal">
+          <div class="job__head">
+            <h3 class="job__title">Unity Programmer &middot; <span class="job__company">VR Factory Games SA</span></h3>
+            <p class="job__period">03/2025 &ndash; 01/2026</p>
+          </div>
+          <p class="job__meta">Remote</p>
+          <ul class="bullets">
+            <li>Contributed to the full development lifecycle and successful release of <strong>Battlecrafter VR</strong>, including post-launch updates.</li>
+            <li>Maintained and developed post-launch updates for <strong>Workshop Simulator VR</strong>, focusing on feature enhancements and bug fixing.</li>
+            <li>Worked on porting Battlecrafter VR to flat-screen PC, adapting VR-specific controls and mechanics for standard desktop systems.</li>
+            <li>Implemented diverse gameplay mechanics, responsive user interfaces and core technical systems.</li>
+            <li>Optimised game logic and graphics to meet strict performance requirements and maintain high framerates in VR.</li>
+            <li>Integrated complex audio systems using FMOD to enhance the game's soundscape and immersion.</li>
+            <li>Implemented advanced dynamic texture painting mechanics utilising the PaintIn3D package.</li>
+            <li>Worked with and modified custom shaders to resolve rendering issues and optimise visual performance.</li>
+            <li>Integrated Meta APIs to support platform-specific features and functionalities.</li>
+            <li>Maintained high standards of code quality through clean coding practices and design patterns.</li>
+            <li>Collaborated using Git version control, Jira for task tracking and Jenkins for automated build pipelines.</li>
+          </ul>
+        </article>
+
+        <article class="job reveal">
+          <div class="job__head">
+            <h3 class="job__title">Unity Developer &middot; <span class="job__company">Wenkly Studio</span></h3>
+            <p class="job__period">05/2016 &ndash; 11/2024</p>
+          </div>
+          <p class="job__meta">Gliwice / Remote</p>
+          <ul class="bullets">
+            <li>Developed and shipped numerous VR and mobile titles, including Elven Assassin, Survival Nation, Astro Hunters, Private Property, Battle of Kings and Google Cardboard games.</li>
+            <li>Implemented core gameplay mechanics, advanced AI systems, responsive UI and robust networking solutions across multiple projects.</li>
+            <li>Engineered multiplayer systems and netcode utilising Photon Networking to deliver seamless online experiences.</li>
+            <li>Engineered an automated, self-hosting tournament system on AWS cloud infrastructure, integrating a backend database to manage tournament schedules, configurations and player statistics.</li>
+            <li>Optimised game logic and graphics to ensure stable performance and high framerates across target platforms.</li>
+            <li>Ported titles across Valve, Meta and WMR VR headsets, desktop and mobile, ensuring cross-platform compatibility.</li>
+            <li>Integrated platform-specific APIs from Steam, Meta and other major distributors.</li>
+            <li>Refactored legacy codebases to significantly improve code quality, maintainability and architectural scalability.</li>
+            <li>Established and introduced internal programming standards to elevate team-wide code consistency.</li>
+            <li>Participated actively in intensive code reviews, fostering a culture of high-quality development and knowledge sharing.</li>
+            <li>Collaborated in an Agile/Scrum framework, managing tasks and workflows via Jira and Git version control.</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== PROJECTS ========================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Projects</p>
+        <h2 class="section-title">Titles I've worked on</h2>
+        <p class="section-intro">
+          Games I contributed to as a Unity Developer at Wenkly Studio and VR Factory Games.
+          Each card lists my headline contributions — expand it for the full breakdown.
+        </p>
+      </div>
+
+      <div class="projects">
+
+        <!-- Elven Assassin -->
+        <article class="project reveal">
+          <div class="project__thumb">
+            <img src="assets/img/elven-assassin.jpg" width="460" height="215" loading="lazy"
+                 alt="Elven Assassin key art: an elven archer drawing a bow in a mountain valley">
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Elven Assassin</h3>
+            <p class="project__desc">
+              A room-scale VR archery game — defend a town from hordes of orcs with a bow, solo
+              or in four-player co-op. Recognised as one of the top-grossing arcade titles
+              in the VR market.
+            </p>
+            <p class="project__role">Unity Developer &middot; Wenkly Studio</p>
+            <div class="tags">
+              <span class="tag tag--vr">VR</span>
+              <span class="tag">Meta</span>
+              <span class="tag">Pico</span>
+              <span class="tag">PC</span>
+              <a class="tag" href="https://store.steampowered.com/app/503770/Elven_Assassin/" target="_blank" rel="noopener noreferrer">Steam &#8599;</a>
+            </div>
+
+            <ul class="bullets">
+              <li>Optimised enemy pathfinding to handle complex movement and maximise runtime performance.</li>
+              <li>Engineered a flexible wave system allowing dynamic difficulty adjustment and balancing.</li>
+              <li>Designed and built an extensible spell system focused on modularity and reusability.</li>
+              <li>Developed cross-platform deployment tools to streamline adaptation across target hardware.</li>
+              <li>Integrated tournament hosting infrastructure leveraging AWS and REST APIs for secure backend communication.</li>
+            </ul>
+
+            <ul class="bullets project__more" id="more-elven" hidden>
+              <li>Implemented enemy AI: axe throws, melee attacks, death reactions, kamikaze units, troll and dragon attacks.</li>
+              <li>Implemented the arrow-teleport traversal system.</li>
+              <li>Worked extensively on multiplayer using Photon Unity Networking.</li>
+              <li>Worked on bow and arrow handling.</li>
+              <li>Implemented core PvP mode elements and PvP tournaments hosted automatically on AWS.</li>
+              <li>Integrated Steam and Oculus APIs — scoreboards, cloud saves and more.</li>
+              <li>Introduced a programming standards document to improve team code quality.</li>
+              <li>Implemented stationary weapons for players: cannon, ballista and catapult.</li>
+              <li>Built the localisation system and an object pooling system.</li>
+              <li>Built large parts of the escort-the-payload (princess) mode: payload movement, enemy AI and map progression.</li>
+              <li>Implemented the ship landing troops system and the points system.</li>
+              <li>Ported to Valve, Meta, Pico and WMR headsets and their platform APIs.</li>
+              <li>Extensive optimisation, UI implementation and debugging.</li>
+            </ul>
+
+            <div class="project__foot">
+              <button class="toggle" type="button" aria-expanded="false" aria-controls="more-elven">
+                <span class="toggle__label">Show all contributions</span>
+                <svg class="toggle__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Survival Nation -->
+        <article class="project reveal">
+          <div class="project__thumb">
+            <img src="assets/img/survival-nation.jpg" width="460" height="215" loading="lazy"
+                 alt="Survival Nation key art: two armed survivors facing zombies in a snowy forest">
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Survival Nation</h3>
+            <p class="project__desc">
+              An open-world online VR survival RPG with solo, PvE and PvP modes — zombie combat,
+              scavenging and crafting, quest lines and skill-tree progression.
+            </p>
+            <p class="project__role">Unity Developer &middot; Wenkly Studio</p>
+            <div class="tags">
+              <span class="tag tag--vr">VR</span>
+              <span class="tag">Meta</span>
+              <span class="tag">Pico</span>
+              <span class="tag">PC</span>
+              <a class="tag" href="https://store.steampowered.com/app/2153780/" target="_blank" rel="noopener noreferrer">Steam &#8599;</a>
+            </div>
+
+            <ul class="bullets">
+              <li>Introduced and integrated the Hurricane VR plugin, significantly reducing development time while elevating the quality of VR interactions.</li>
+              <li>Engineered AI behaviours for ranged enemies with customised decision-making and combat logic.</li>
+              <li>Developed and optimised a comprehensive player needs system driving the survival mechanics.</li>
+              <li>Implemented asynchronous I/O using Addressables for dynamic font asset loading and unloading to optimise memory.</li>
+            </ul>
+
+            <ul class="bullets project__more" id="more-survival" hidden>
+              <li>Worked extensively on multiplayer using Photon Unity Networking.</li>
+              <li>Fine-tuned physics-based grabbing and weapon handling systems.</li>
+              <li>Implemented VR IK full-body player movement using the FinalIK plugin.</li>
+              <li>Worked on the quest system and UI implementation.</li>
+              <li>Implemented an object pooling system and asset memory optimisation via Addressables.</li>
+              <li>Implemented a throwing mechanic for the PC version of the game.</li>
+              <li>Implemented the poisoning mechanic and unified the player statistics system.</li>
+              <li>Worked on NavMesh pathfinding and melee combat improvements.</li>
+              <li>Implemented small background creatures and the explosive barrel system.</li>
+              <li>Worked on PvP mode: player drops, notifications and statistics.</li>
+              <li>Built a performance-checking tool and a tool for automatic graphics adjustment.</li>
+              <li>Ported to Valve, Meta, Pico and WMR headsets and their platform APIs.</li>
+            </ul>
+
+            <div class="project__foot">
+              <button class="toggle" type="button" aria-expanded="false" aria-controls="more-survival">
+                <span class="toggle__label">Show all contributions</span>
+                <svg class="toggle__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Battlecrafter VR -->
+        <article class="project reveal">
+          <div class="project__thumb">
+            <img src="assets/img/battlecrafter.png" width="750" height="422" loading="lazy"
+                 alt="Battlecrafter VR key art: gloved hands restoring a sword with a laser tool">
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Battlecrafter VR</h3>
+            <p class="project__desc">
+              A restoration simulator set in a Martian war museum — rebuild historical weapons
+              and armour with precision tools, and see finished pieces installed into
+              multimedia domes that recreate iconic battles.
+            </p>
+            <p class="project__role">Unity Programmer &middot; VR Factory Games</p>
+            <div class="tags">
+              <span class="tag tag--vr">VR</span>
+              <a class="tag" href="https://www.meta.com/experiences/battlecrafter-vr/9307969729267252/" target="_blank" rel="noopener noreferrer">Meta &#8599;</a>
+            </div>
+
+            <ul class="bullets">
+              <li>Engineered core crafting and assembly mechanics, including dynamic tool interactions that modify object graphics and handle full part assembly and disassembly.</li>
+              <li>Implemented advanced dynamic texture painting mechanics utilising the PaintIn3D package.</li>
+              <li>Developed physics-based object manipulation within a specialised "antigravity device" mechanic.</li>
+              <li>Developed an in-game store using currency earned from restoration contracts to buy durable upgrades and consumables.</li>
+              <li>Ported core VR tool mechanics to flat-screen PC, ensuring cross-platform gameplay consistency.</li>
+            </ul>
+
+            <ul class="bullets project__more" id="more-battlecrafter" hidden>
+              <li>Built a flexible voiceover/lector system to handle dynamic narration and audio cues.</li>
+              <li>Designed an intuitive "How to Play" tutorial system to onboard new players.</li>
+              <li>Integrated platform achievements to enhance player engagement and completion loops.</li>
+              <li>Handled object interactions with Hurricane VR.</li>
+              <li>Worked on SFX integration with FMOD.</li>
+              <li>Worked with Jenkins for automated builds.</li>
+              <li>Optimisation, UI implementation and debugging.</li>
+            </ul>
+
+            <div class="project__foot">
+              <button class="toggle" type="button" aria-expanded="false" aria-controls="more-battlecrafter">
+                <span class="toggle__label">Show all contributions</span>
+                <svg class="toggle__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Astro Hunters VR -->
+        <article class="project reveal">
+          <div class="project__thumb">
+            <img src="assets/img/astro-hunters.jpg" width="460" height="215" loading="lazy"
+                 alt="Astro Hunters VR key art: two armed astronauts on a red alien planet">
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Astro Hunters VR</h3>
+            <p class="project__desc">
+              A multiplayer sci-fi extraction shooter for VR and PC, focused on high-stakes
+              PvPvE mechanics and deep space exploration.
+            </p>
+            <p class="project__role">Unity Developer &middot; Wenkly Studio</p>
+            <div class="tags">
+              <span class="tag tag--vr">VR</span>
+              <span class="tag">Meta</span>
+              <a class="tag" href="https://store.steampowered.com/app/2715910/Astro_Hunters_VR/" target="_blank" rel="noopener noreferrer">Steam &#8599;</a>
+            </div>
+
+            <ul class="bullets">
+              <li>Architected and implemented the advanced interactive extraction mechanic as a core gameplay system — spaceship landing and fly-out cycles, mothership travel destination selection.</li>
+              <li>Developed a physics-based tablet UI interaction system to enhance immersion and spatial usability.</li>
+              <li>Engineered intelligent AI for firearm-equipped enemies, featuring sophisticated combat and tactical behaviours.</li>
+              <li>Designed and programmed fluid traversal mechanics, including responsive double-jump and hovering systems.</li>
+            </ul>
+
+            <ul class="bullets project__more" id="more-astro" hidden>
+              <li>Implemented multiplayer using Photon Networking.</li>
+              <li>Fine-tuned the grabbing system and gun handling with Hurricane VR.</li>
+              <li>Built the resource gathering system.</li>
+              <li>Expanded the quest system with input-code quests.</li>
+              <li>Implemented deadly area mechanics: lava, poison and out-of-bounds zones.</li>
+              <li>Built buff and healing systems, including inhaler interactions.</li>
+              <li>Implemented a physical lever system and outfit customisation.</li>
+              <li>Implemented a clone-prevention system and the player slipping mechanic.</li>
+              <li>Implemented the flick-to-close gun mechanic.</li>
+              <li>Converted saves and migrated items between versions.</li>
+              <li>Ported to Valve, Meta, Pico and WMR headsets and their platform APIs.</li>
+              <li>Optimisation, UI implementation and debugging.</li>
+            </ul>
+
+            <div class="project__foot">
+              <button class="toggle" type="button" aria-expanded="false" aria-controls="more-astro">
+                <span class="toggle__label">Show all contributions</span>
+                <svg class="toggle__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Private Property -->
+        <article class="project reveal">
+          <div class="project__thumb">
+            <img src="assets/img/private-property.jpg" width="460" height="215" loading="lazy"
+                 alt="Private Property key art: a Wild West gunslinger facing zombies outside a wooden fort">
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Private Property</h3>
+            <p class="project__desc">
+              A co-op VR zombie shooter set in 1890s Montana — teams defend their property from
+              sprinting undead with revolvers, shotguns, rifles and a bow.
+            </p>
+            <p class="project__role">Unity Developer &middot; Wenkly Studio</p>
+            <div class="tags">
+              <span class="tag tag--vr">VR</span>
+              <span class="tag">Meta</span>
+              <span class="tag">Pico</span>
+              <a class="tag" href="https://store.steampowered.com/app/1481700/Private_Property/" target="_blank" rel="noopener noreferrer">Steam &#8599;</a>
+            </div>
+
+            <ul class="bullets">
+              <li>Engineered comprehensive core gunplay systems: modular shooting mechanics, reloading logic and procedural weapon recoil.</li>
+              <li>Developed and integrated an interactive stationary Gatling gun mechanic designed for player use.</li>
+              <li>Implemented high-performance projectile tracking using frame-by-frame raycasting to handle dynamic physics and accurately trigger hit visual and audio effects.</li>
+            </ul>
+
+            <ul class="bullets project__more" id="more-private" hidden>
+              <li>Implemented multiplayer using Photon Networking.</li>
+              <li>Built a new hand-chosen teleport system.</li>
+              <li>Implemented VR IK full-body player movement using FinalIK.</li>
+              <li>Built the enemy movement and enemy spawning systems.</li>
+              <li>Implemented bullet hit decals and other impact effects.</li>
+              <li>Ported to Valve, Meta, Pico and WMR headsets and their platform APIs.</li>
+              <li>UI implementation and debugging.</li>
+            </ul>
+
+            <div class="project__foot">
+              <button class="toggle" type="button" aria-expanded="false" aria-controls="more-private">
+                <span class="toggle__label">Show all contributions</span>
+                <svg class="toggle__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Battle of Kings VR -->
+        <article class="project reveal">
+          <div class="project__thumb">
+            <img src="assets/img/battle-of-kings.jpg" width="460" height="215" loading="lazy"
+                 alt="Battle of Kings key art: a medieval castle siege with knights and a catapult">
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Battle of Kings VR</h3>
+            <p class="project__desc">
+              A VR tower-defence strategy game — hold your fortifications under siege while
+              developing an economy and upgrading your army, across single-player
+              campaign and multiplayer PvP.
+            </p>
+            <p class="project__role">Unity Developer &middot; Wenkly Studio</p>
+            <div class="tags">
+              <span class="tag tag--vr">VR</span>
+              <span class="tag">PC</span>
+              <a class="tag" href="https://store.steampowered.com/app/778250/Battle_of_Kings_VR/" target="_blank" rel="noopener noreferrer">Steam &#8599;</a>
+            </div>
+
+            <ul class="bullets">
+              <li>Engineered the core gameplay logic and state management for both the single-player CPU campaign and multiplayer PvP modes.</li>
+              <li>Developed a modular castle expansion system managing progression structures, resource costs and base-building mechanics.</li>
+              <li>Designed and implemented a responsive camera movement system for smooth navigation and optimal tactical overview.</li>
+            </ul>
+
+            <ul class="bullets project__more" id="more-bok" hidden>
+              <li>Implemented multiplayer using Photon Networking.</li>
+              <li>Built the enemy movement and enemy spawn systems.</li>
+              <li>Ported to desktop plus Valve, Meta and WMR headsets and their platform APIs.</li>
+              <li>Optimisation, UI implementation and debugging.</li>
+            </ul>
+
+            <div class="project__foot">
+              <button class="toggle" type="button" aria-expanded="false" aria-controls="more-bok">
+                <span class="toggle__label">Show all contributions</span>
+                <svg class="toggle__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Workshop Simulator VR -->
+        <article class="project reveal">
+          <div class="project__thumb">
+            <img src="assets/img/workshop-simulator.png" width="460" height="215" loading="lazy"
+                 alt="Workshop Simulator VR key art: gloved hands holding a hammer and pliers in a workshop">
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Workshop Simulator VR</h3>
+            <p class="project__desc">
+              A highly immersive VR restoration simulator focused on detailed mechanical
+              disassembly, tool interactions and physical item repairs.
+            </p>
+            <p class="project__role">Unity Programmer &middot; VR Factory Games</p>
+            <div class="tags">
+              <span class="tag tag--vr">VR</span>
+              <span class="tag">Meta</span>
+              <a class="tag" href="https://store.steampowered.com/app/2655120/Workshop_Simulator_VR/" target="_blank" rel="noopener noreferrer">Steam &#8599;</a>
+            </div>
+
+            <ul class="bullets">
+              <li>Developed an in-game patch notes system, creating a dynamic UI component to seamlessly display update logs and version details to users.</li>
+              <li>Engineered contextual UX guides for precision tool interactions, implementing visual aids and micro-feedback loops for mechanical screw manipulation.</li>
+              <li>Maintained and developed post-launch updates, focusing on feature enhancements and bug fixing.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Last Order: Blackwood Project -->
+        <article class="project reveal">
+          <div class="project__thumb project__thumb--none">
+            <span>Google Cardboard<br>2016</span>
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Last Order: Blackwood Project</h3>
+            <p class="project__desc">
+              A mobile FPS built for smartphones with VR attachments, released on Google Play
+              and the App Store.
+            </p>
+            <p class="project__role">Unity Developer &middot; Wenkly Studio</p>
+            <div class="tags">
+              <span class="tag">Google Play</span>
+              <span class="tag">App Store</span>
+              <span class="tag tag--muted">No longer available</span>
+            </div>
+
+            <ul class="bullets">
+              <li>Implemented enemy AI with A* pathfinding.</li>
+              <li>Worked on optimisation and debugging.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Skydive VR -->
+        <article class="project reveal">
+          <div class="project__thumb project__thumb--none">
+            <span>Mobile VR prototype</span>
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Skydive VR</h3>
+            <p class="project__desc">
+              A mobile arcade game about skydiving, built for smartphones with VR attachments.
+            </p>
+            <p class="project__role">Unity Developer &middot; Wenkly Studio</p>
+            <div class="tags">
+              <span class="tag tag--vr">VR</span>
+              <span class="tag tag--muted">Not published</span>
+            </div>
+
+            <ul class="bullets">
+              <li>Implemented the flying mechanic.</li>
+              <li>Built the points-for-tricks system.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================== SKILLS =========================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Skills</p>
+        <h2 class="section-title">What I work with</h2>
+      </div>
+
+      <div class="skills">
+        <div class="skillgroup reveal">
+          <h3 class="skillgroup__title">Engine &amp; language</h3>
+          <ul class="chips">
+            <li class="chip">Unity</li>
+            <li class="chip">C#</li>
+            <li class="chip">Design patterns</li>
+            <li class="chip">Unity Addressables</li>
+            <li class="chip">Shader development</li>
+            <li class="chip">Optimization &amp; debugging</li>
+            <li class="chip">R3 (Reactive Extensions)</li>
+            <li class="chip">Zenject / VContainer</li>
+            <li class="chip">Unity DOTS / ECS</li>
+            <li class="chip">Unit testing</li>
+            <li class="chip">UI implementation</li>
+          </ul>
+        </div>
+
+        <div class="skillgroup reveal">
+          <h3 class="skillgroup__title">VR &amp; platforms</h3>
+          <ul class="chips">
+            <li class="chip">OpenXR</li>
+            <li class="chip">Meta Quest</li>
+            <li class="chip">Valve Index</li>
+            <li class="chip">Pico</li>
+            <li class="chip">Windows Mixed Reality</li>
+            <li class="chip">Hurricane VR</li>
+            <li class="chip">FinalIK</li>
+            <li class="chip">Steam &amp; Meta APIs</li>
+          </ul>
+        </div>
+
+        <div class="skillgroup reveal">
+          <h3 class="skillgroup__title">Networking &amp; backend</h3>
+          <ul class="chips">
+            <li class="chip">Photon Unity Networking</li>
+            <li class="chip">Multiplayer &amp; netcode</li>
+            <li class="chip">AWS cloud infrastructure</li>
+            <li class="chip">REST API</li>
+          </ul>
+        </div>
+
+        <div class="skillgroup reveal">
+          <h3 class="skillgroup__title">Tooling &amp; process</h3>
+          <ul class="chips">
+            <li class="chip">Git</li>
+            <li class="chip">Jira</li>
+            <li class="chip">Jenkins (automated builds)</li>
+            <li class="chip">Agile / Scrum</li>
+            <li class="chip">FMOD audio integration</li>
+            <li class="chip">Unity MCP</li>
+            <li class="chip">Agentic development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION & LANGUAGES ==================== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Education</p>
+        <h2 class="section-title">Background</h2>
+      </div>
+
+      <div class="duo">
+        <div class="card reveal">
+          <h3 class="card__title">Bachelor of Science, Computer Science</h3>
+          <p class="card__sub">Silesian University of Technology in Gliwice</p>
+          <p class="card__period">10/2013 &ndash; 02/2017</p>
+        </div>
+
+        <div class="card reveal">
+          <h3 class="card__title">Languages</h3>
+          <div class="langs">
+            <div class="lang">
+              <span>Polish</span>
+              <span class="lang__level">Native</span>
+            </div>
+            <div class="lang">
+              <span>English</span>
+              <span class="lang__level">C1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== CONTACT ========================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact reveal">
+        <h2 class="contact__title">Let's build something together</h2>
+        <p class="contact__text">
+          I'm open to Unity roles with a focus on VR, multiplayer and gameplay systems —
+          remote or on-site. The fastest way to reach me is email.
+        </p>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:barteboj@gmail.com">barteboj@gmail.com</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/bartosz-bojda-057007143" target="_blank" rel="noopener noreferrer">
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85V21H9z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a class="btn btn--ghost" href="assets/bartosz-bojda-cv.pdf" download>
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+            Download CV (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>&copy; <span id="year">2026</span> Bartosz Bojda</p>
+    <p>Built with HTML, CSS and JavaScript.</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

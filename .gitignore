@@ -1,0 +1,10 @@
+# Allow-list: ignore everything, then re-include only what the public site needs.
+# This keeps the CV working files (which contain a phone number, and one tailored
+# to a named employer) out of the published repository.
+/*
+!/.gitignore
+!/README.md
+!/index.html
+!/css/
+!/js/
+!/assets/
