@@ -130,7 +130,8 @@
           <p>
             My work spans the full stack of game development: core gameplay mechanics, advanced
             AI systems, responsive UI, and robust networking. I've engineered multiplayer and
-            netcode with Photon, built an automated self-hosting tournament system on AWS,
+            netcode with Photon, built an automated tournament system that ran unattended
+            on a cloud machine and defined the backend contract it ran against,
             optimised game logic and graphics for stable framerates, and ported titles across
             Valve, Meta, Pico and WMR headsets as well as desktop and mobile.
           </p>
@@ -217,7 +218,7 @@
             <li>Developed and shipped numerous VR and mobile titles, including Elven Assassin, Survival Nation, Astro Hunters, Private Property, Battle of Kings and Google Cardboard games.</li>
             <li>Implemented core gameplay mechanics, advanced AI systems, responsive UI and robust networking solutions across multiple projects.</li>
             <li>Engineered multiplayer systems and netcode utilising Photon Networking to deliver seamless online experiences.</li>
-            <li>Engineered an automated, self-hosting tournament system on AWS cloud infrastructure, integrating a backend database to manage tournament schedules, configurations and player statistics.</li>
+            <li>Designed and built an automated tournament system: a headless host application running unattended on a cloud machine, launching tournament stages, assigning players to matches and reporting results to a backend over REST &mdash; defined the backend requirements and API contract with the infrastructure provider.</li>
             <li>Optimised game logic and graphics to ensure stable performance and high framerates across target platforms.</li>
             <li>Ported titles across Valve, Meta and WMR VR headsets, desktop and mobile, ensuring cross-platform compatibility.</li>
             <li>Integrated platform-specific APIs from Steam, Meta and other major distributors.</li>
@@ -273,7 +274,7 @@
               <li>Engineered a flexible wave system allowing dynamic difficulty adjustment and balancing.</li>
               <li>Designed and built an extensible spell system focused on modularity and reusability.</li>
               <li>Developed cross-platform deployment tools to streamline adaptation across target hardware.</li>
-              <li>Integrated tournament hosting infrastructure leveraging AWS and REST APIs for secure backend communication.</li>
+              <li>Built the tournament host application and the game client&rsquo;s REST integration, and defined the backend requirements and API contract with the infrastructure provider &mdash; tournaments ran start to finish on a cloud machine without anyone from the studio present.</li>
             </ul>
 
             <ul class="bullets project__more" id="more-elven" hidden>
@@ -281,7 +282,7 @@
               <li>Implemented the arrow-teleport traversal system.</li>
               <li>Worked extensively on multiplayer using Photon Unity Networking.</li>
               <li>Worked on bow and arrow handling.</li>
-              <li>Implemented core PvP mode elements and PvP tournaments hosted automatically on AWS.</li>
+              <li>Implemented core PvP mode elements and PvP tournaments run automatically by a cloud-hosted tournament host.</li>
               <li>Integrated Steam and Oculus APIs — scoreboards, cloud saves and more.</li>
               <li>Introduced a programming standards document to improve team code quality.</li>
               <li>Implemented stationary weapons for players: cannon, ballista and catapult.</li>
@@ -503,9 +504,10 @@
           <div class="project__body">
             <h3 class="project__title">Battle of Kings VR</h3>
             <p class="project__desc">
-              A VR tower-defence strategy game — hold your fortifications under siege while
+              A tower-defence strategy game — hold your fortifications under siege while
               developing an economy and upgrading your army, across single-player
-              campaign and multiplayer PvP.
+              campaign and multiplayer PvP. Released for VR headsets and as a
+              flat-screen PC version.
             </p>
             <p class="project__role">Unity Developer &middot; Wenkly Studio</p>
             <div class="tags">
@@ -660,7 +662,7 @@
           <ul class="chips">
             <li class="chip">Photon Unity Networking</li>
             <li class="chip">Multiplayer &amp; netcode</li>
-            <li class="chip">AWS cloud infrastructure</li>
+            <li class="chip">Cloud-hosted game services (AWS)</li>
             <li class="chip">REST API</li>
           </ul>
         </div>
